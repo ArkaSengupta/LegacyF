@@ -1,8 +1,10 @@
 .navbar {
-    background-color: #ffffff;
+/*     background-color: #ffffff; */
     padding: 10px 20px;
-    border-bottom: 1px solid #eaeaea;
+/*     border-bottom: 1px solid #eaeaea; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ccc;
 }
 
 .nav-list {
@@ -12,7 +14,6 @@
     margin: 0;
     padding: 0;
 }
-
 .nav-link {
     text-decoration: none;
     color: #333;
@@ -29,4 +30,12 @@
 
 .nav-link:active {
     transform: scale(0.95);
+=======
+.nav-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
 }

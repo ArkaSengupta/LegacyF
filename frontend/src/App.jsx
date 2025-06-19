@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 import Dashboard from "./pages/Dashboard"
 import NotFound from "./pages/NotFound"
 import ProtectedRoute from "./components/ProtectedRoute"
+import OpenLayout from "./components/OpenLayout"
 
 function Logout() {
   localStorage.clear()
@@ -24,7 +25,9 @@ function App() {
         <Route
           path="/"
           element={
-            <Home />
+            <OpenLayout>
+              <Home />
+            </OpenLayout>
           }
         />
         <Route

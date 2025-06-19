@@ -1,100 +1,13 @@
-import react from "react"
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
-import Login from "./pages/Login"
-import Register from "./pages/Register"
-import Home from "./pages/Home"
-import Products from "./pages/Products"
-import Pricing from "./pages/Pricing"
-import Team from "./pages/Team"
-import Dashboard from "./pages/Dashboard"
-import NotFound from "./pages/NotFound"
-import ProtectedRoute from "./components/ProtectedRoute"
-import OpenLayout from "./components/OpenLayout"
-
-function Logout() {
-  localStorage.clear()
-  return <Navigate to="/login" />
-}
-
-function RegisterAndLogout() {
-  localStorage.clear()
-  return <Register />
-}
+import react from "react";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./Routes";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <OpenLayout>
-              <Home />
-            </OpenLayout>
-          }
-        />
-        <Route
-          path="/products"
-          element={
-            <OpenLayout>
-              <Products />
-            </OpenLayout>
-          }
-        />
-        <Route
-          path="/pricing"
-          element={
-            <OpenLayout>
-              <Pricing />
-            </OpenLayout>
-          }
-        />
-        <Route
-          path="/team"
-          element={
-            <OpenLayout>
-              <Team />
-            </OpenLayout>
-          }
-        />
-        <Route
-          path="/home"
-          element={
-            <ProtectedRoute>
-              <Dashboard />
-            </ProtectedRoute>
-          }
-        />
-        <Route path="/login" element={<Login />} />
-        <Route path="/logout" element={<Logout />} />
-        <Route path="/register" element={<RegisterAndLogout />} />
-        <Route path="*" element={<NotFound />}></Route>
-      </Routes>
+      <AppRoutes />
     </BrowserRouter>
-  )
+  );
 }
 
-
-{/* <div>
-  <a href="https://vite.dev" target="_blank">
-    <img src={viteLogo} className="logo" alt="Vite logo" />
-  </a>
-  <a href="https://react.dev" target="_blank">
-    <img src={reactLogo} className="logo react" alt="React logo" />
-  </a>
-</div>
-<h1>Vite + React</h1>
-<div className="card">
-  <button onClick={() => setCount((count) => count + 1)}>
-    count is {count}
-  </button>
-  <p>
-    Edit <code>src/App.jsx</code> and save to test HMR
-  </p>
-</div>
-<p className="read-the-docs">
-  Click on the Vite and React logos to learn more
-</p> */}
-
-
-export default App
+export default App;

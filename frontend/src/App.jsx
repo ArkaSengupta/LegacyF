@@ -3,9 +3,13 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import Login from "./pages/Login"
 import Register from "./pages/Register"
 import Home from "./pages/Home"
+import Products from "./pages/Products"
+import Pricing from "./pages/Pricing"
+import Team from "./pages/Team"
 import Dashboard from "./pages/Dashboard"
 import NotFound from "./pages/NotFound"
 import ProtectedRoute from "./components/ProtectedRoute"
+import OpenLayout from "./components/OpenLayout"
 
 function Logout() {
   localStorage.clear()
@@ -24,7 +28,33 @@ function App() {
         <Route
           path="/"
           element={
-            <Home />
+            <OpenLayout>
+              <Home />
+            </OpenLayout>
+          }
+        />
+        <Route
+          path="/products"
+          element={
+            <OpenLayout>
+              <Products />
+            </OpenLayout>
+          }
+        />
+        <Route
+          path="/pricing"
+          element={
+            <OpenLayout>
+              <Pricing />
+            </OpenLayout>
+          }
+        />
+        <Route
+          path="/team"
+          element={
+            <OpenLayout>
+              <Team />
+            </OpenLayout>
           }
         />
         <Route

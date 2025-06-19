@@ -1,10 +1,10 @@
-import Navbar from "./Navbar";
+import CNavbar from "./CNavbar";
 import "../styles/OpenLayout.css";
 
 function OpenLayout({ children }) {
     return (
         <div>
-            <Navbar />
+            <CNavbar />
             <div className="page-body">{children}</div>
         </div>
     );

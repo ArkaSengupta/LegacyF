@@ -78,7 +78,6 @@ function Home() {
           </Row>
         </Container>
       </section>
-
       <section className="cta text-center text-light py-5">
         <Container>
           <h2 className="mb-4">Ready to get started?</h2>

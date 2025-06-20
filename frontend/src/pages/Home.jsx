@@ -78,6 +78,51 @@ function Home() {
           </Row>
         </Container>
       </section>
+      <section className="about">
+        <Container>
+          <Row className="align-items-center">
+            <Col md={6} className="mb-4 mb-md-0">
+              <h2 className="mb-3">Why FinanceAI?</h2>
+              <p className="lead">
+                Harness artificial intelligence to simplify reporting and gain
+                valuable insights without the manual work.
+              </p>
+            </Col>
+            <Col md={6} className="text-center">
+              <img
+                src="https://via.placeholder.com/600x400"
+                alt="dashboard preview"
+                className="img-fluid rounded"
+              />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section className="testimonials text-center">
+        <Container>
+          <Row className="mb-5">
+            <Col>
+              <h2 className="section-title">What our users say</h2>
+            </Col>
+          </Row>
+          <Row className="g-4 justify-content-center">
+            <Col md={4} className="testimonial">
+              <p>
+                "FinanceAI transformed our financial workflow and saved us
+                countless hours."
+              </p>
+              <small className="text-muted">- Alex, CFO</small>
+            </Col>
+            <Col md={4} className="testimonial">
+              <p>
+                "The predictive insights give us a competitive edge in our
+                planning."
+              </p>
+              <small className="text-muted">- Maria, Analyst</small>
+            </Col>
+          </Row>
+        </Container>
+      </section>
       <section className="cta text-center text-light py-5">
         <Container>
           <h2 className="mb-4">Ready to get started?</h2>

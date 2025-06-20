@@ -1,19 +1,33 @@
 .hero {
-  height: 100vh;
-  background: linear-gradient(135deg, #111 0%, #333 100%);
+  min-height: 100vh;
+  padding: 6rem 0 4rem;
+  background: radial-gradient(circle at 30% 30%, #4338ca, #0f0f0f 70%);
   color: #fff;
-  display: flex;
-  align-items: center;
 }
 
-.hero-content {
-  max-width: 600px;
-}
-
-.hero-buttons .btn {
-  margin-right: 0.5rem;
+.hero-img {
+  border-radius: 1rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 .features {
-  padding: 4rem 0;
+  padding: 5rem 0;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  color: #6c757d;
+}
+
+.cta {
+  background: linear-gradient(135deg, #1b1b1b 0%, #111 100%);
 }

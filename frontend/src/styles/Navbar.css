@@ -1,9 +1,12 @@
+
 .navbar {
+  background: linear-gradient(90deg, #0f0f0f 0%, #1a1a1a 100%);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
   font-weight: 700;
+  font-size: 1.3rem;
 }
 
 .navbar-dark .nav-link {
@@ -12,4 +15,9 @@
 
 .navbar-dark .nav-link:hover {
   color: #fff;
+}
+
+.navbar .btn {
+  padding: 0.35rem 1rem;
+  font-size: 0.9rem;
 }

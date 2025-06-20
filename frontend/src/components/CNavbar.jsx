@@ -20,7 +20,7 @@ function CNavbar() {
                         {location.pathname !== '/login' && (
                             <Nav.Link as={Link} to="/login" className="sign-in-link me-lg-3">Sign in</Nav.Link>
                         )}
-                        <Button as={Link} to="/pricing" variant="primary" className="get-started-btn">Get Started</Button>
+                        <Button as={Link} to="/pricing" variant="primary" className="get-started-btn">Join waitlist</Button>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>

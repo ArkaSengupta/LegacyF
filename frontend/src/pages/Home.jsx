@@ -9,20 +9,19 @@ function Home() {
           <Row className="align-items-center">
             <Col lg={6}>
               <h1 className="display-3 fw-bold mb-4">
-                AI-powered finance for everyone
+                AI-powered finance for modern teams
               </h1>
               <p className="lead mb-4">
-                Manage, track and analyse your finances with intelligent
-                automation.
+                Automate your workflow and gain insights with a single platform.
               </p>
               <div className="d-flex gap-3">
-                <Button variant="primary" href="/pricing">Start free trial</Button>
-                <Button variant="outline-light" href="/products">Learn More</Button>
+                <Button variant="primary" href="/pricing">Join waitlist</Button>
+                <Button variant="outline-light" href="/products">Watch demo</Button>
               </div>
             </Col>
             <Col lg={6} className="text-center mt-4 mt-lg-0">
               <img
-                src="https://via.placeholder.com/600x400"
+                src="https://via.placeholder.com/700x420"
                 alt="FinanceAI screenshot"
                 className="img-fluid hero-img"
               />
@@ -35,9 +34,9 @@ function Home() {
         <Container>
           <Row className="mb-5">
             <Col>
-              <h2 className="section-title">Built for modern teams</h2>
+              <h2 className="section-title">Built for productivity</h2>
               <p className="section-subtitle">
-                Everything you need to streamline financial workflows
+                Tools that help you work smarter and faster
               </p>
             </Col>
           </Row>
@@ -82,9 +81,9 @@ function Home() {
 
       <section className="cta text-center text-light py-5">
         <Container>
-          <h2 className="mb-4">Ready to simplify your finances?</h2>
+          <h2 className="mb-4">Ready to get started?</h2>
           <Button variant="light" href="/pricing" size="lg">
-            Get Started
+            Get started
           </Button>
         </Container>
       </section>
